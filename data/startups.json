@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Webcommerce",
+    "description": "We provides ecommerce solutions for small businesses",
+    "address": "10 Main Street Dublin",
+    "phone": "111 111 111",
+    "website": "https://webcommerce.com",
+    "email": "webcommerce@email.com",
+    "remote": true,
+    "jobs": ["Fullstack", "Frontend", "Backend"]
+  },
+  {
+    "name": "Businessinfo",
+    "description": "Business information for medium and large companies",
+    "address": "20 King Street NewYork",
+    "phone": "222 222 222",
+    "website": "https://businessinfo.com",
+    "email": "businessinfo@binfo.com",
+    "remote": true,
+    "jobs": ["Fullstack", "Devops"]
+  },
+  {
+    "name": "Zigza",
+    "description": "Social network for developers",
+    "address": "30 Saint Marry Street Frankfurt",
+    "phone": "333 333 333",
+    "website": "https://zigza.com",
+    "email": "zigza@zigza.com",
+    "remote": false,
+    "jobs": ["Frontend"]
+  }
+]
