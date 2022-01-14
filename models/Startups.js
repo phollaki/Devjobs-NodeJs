@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const slugify = require('slugify');
 
 const StartupsSchema = new mongoose.Schema({
   name: {
@@ -41,11 +42,18 @@ const StartupsSchema = new mongoose.Schema({
   },
   remote: {
     type: Boolean,
-    default: [false],
+    default: false,
   },
+  slug: String,
   createdAt: {
     type: Date,
     default: Date.now(),
   },
 });
+
+StartupsSchema.pre('save', function (next) {
+  this.slug = slugify(this.name, { lower: true });
+  next(); // move on to the next piece of middleware
+});
+
 module.exports = mongoose.model('Startups', StartupsSchema);
